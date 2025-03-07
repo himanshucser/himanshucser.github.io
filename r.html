@@ -7,7 +7,9 @@
   </head>
   <body>
     <script>
-      window.location.href = window.location.href.replace('https://himanshucser.github.io/r/', 'https://thewebdev.xyz/');
+      var urlString =window.location.href;
+      urlString=urlString.replace('https://himanshucser.github.io/r?url=', '');
+      window.location.href = urlString;
     </script>
   </body>
 </html>
