@@ -7,8 +7,12 @@
   </head>
   <body>
     <script>
-      var urlString =window.location.href;
-      urlString=urlString.replace('https://himanshucser.github.io/r?url=', '');
+      var urlString = "https://himanshucser.github.io/r?d=test";
+      if (urlString.startsWith("https://himanshucser.github.io/r?url=")) {
+          urlString = urlString.replace("https://himanshucser.github.io/r?url=", "");
+      } else if (urlString.startsWith("https://himanshucser.github.io/r?d=")) {
+          urlString = urlString.replace("https://himanshucser.github.io/r?d=", "https://thewebdev.xyz/");
+      }
       window.location.href = urlString;
     </script>
   </body>
