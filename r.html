@@ -10,10 +10,12 @@
       var urlString = window.location.href;
       if (urlString.startsWith("https://himanshucser.github.io/r?url=")) {
           urlString = urlString.replace("https://himanshucser.github.io/r?url=", "");
+          window.location.href = urlString;
       } else if (urlString.startsWith("https://himanshucser.github.io/r?d=")) {
           urlString = urlString.replace("https://himanshucser.github.io/r?d=", "https://thewebdev.xyz/");
+          window.location.href = urlString;
       }
-      window.location.href = urlString;
+      
     </script>
   </body>
 </html>
